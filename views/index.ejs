@@ -1,0 +1,37 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Digital Vault - Secure File Storage</title>
+        <link rel="stylesheet" href="/css/style.css">
+        
+    </head>
+    <body>
+        <div class="container">
+            <h1>Digital Vault</h1>
+            <p>Securely store and retrieve your files with encryption.</p>
+            
+            <div class="section">
+                <h2>Upload and Encrypt File</h2>
+                <input type="file" id="fileInput">
+                <input type="password" id="password" placeholder="Enter encryption password">
+                <button id="encryptBtn">Encrypt and Store</button>
+            </div>
+            
+            <div class="section">
+                <h2>Stored Files</h2>
+                <ul id="fileList"></ul>
+            </div>
+            
+            <div class="section">
+                <h2>Decrypt and Download</h2>
+                <select id="fileSelect"></select>
+                <input type="password" id="decryptPassword" placeholder="Enter decryption password">
+                <button id="decryptBtn">Decrypt and Download</button>
+            </div>
+        </div>
+        
+        <script src="/js/script.js"></script>
+    </body>
+    </html>
